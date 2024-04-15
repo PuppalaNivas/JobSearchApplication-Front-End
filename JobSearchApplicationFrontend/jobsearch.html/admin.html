@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="/jobsearch.css/admin.css">
+   <script src="/jobsearch.js/admin.js"></script>
+    
+</head>
+<body>
+    
+     <div class="container"> 
+    <div class="topname">
+    <h1>Welcome To Admin Page</h1>
+    </div>
+    <div class="topbelowname">
+        <h2>Enter your credentials and the verification code to proceed to Admin login Page</h2>
+    </div>
+    <div class="inputdiv">
+        <table>
+            <tr>
+                <td>
+    <label for="userId">User ID</label> </td><td>:</td><td>
+    <input type="text" id="userId" placeholder="Enter your user ID" title="enter Valid UserName to login">
+    </td></tr>
+    <tr>
+        <td>
+    <label for="password">Password:</label></td><td>:</td><td>
+    <input type="password" id="password" placeholder="Enter your password" title="enter valid Password to login">
+    </td></tr>
+    <tr>
+    <td>
+    <p>Verification Code- <span id="verificationCode"></span></p> </td><td>:</td><td>
+    <button onclick="generateVerificationCode()">Generate Code</button>
+    </td></tr>
+    <br><br>
+    <tr> <td>
+    <label for="enteredCode">Enter Verification Code</label></td><td>:</td><td>
+    <input type="text" id="enteredCode" placeholder="Enter the code" title="code should be same as verification code">
+    </td></tr>
+    <tr>
+        <td><td></td></td><td>
+    <button onclick="authenticate()">Submit</button>
+    </td></tr>
+    </table>
+    </div>
+    </div>
+</body>
+</html>
